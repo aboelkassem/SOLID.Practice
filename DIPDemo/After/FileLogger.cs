@@ -18,7 +18,6 @@ namespace DIPDemo.After
             File.AppendAllText(fileName, logLines.ToString());
 
             Console.WriteLine("File logger");
-
         }
     }
 }
