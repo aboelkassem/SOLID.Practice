@@ -1,6 +1,6 @@
 ﻿namespace DIPDemo.Before
 {
-    public class FakeLogger : ILogger
+    public class FakeLogger
     {
         public void LogEvent(string message, string category)
         {

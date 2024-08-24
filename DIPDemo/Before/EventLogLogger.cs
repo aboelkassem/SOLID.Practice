@@ -2,7 +2,7 @@
 
 namespace DIPDemo.Before
 {
-    public class EventLogLogger : ILogger
+    public class EventLogLogger
     {
         public void LogEvent(string message, string category)
         {

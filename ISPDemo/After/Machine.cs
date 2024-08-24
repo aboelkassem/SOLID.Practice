@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ISPDemo.After
 {
-    public class Machine: IPrinter, IFax, IPhotocopier, IScanner, IStapler
+    public class Machine: IPrinter, IFax, IPhotocopier, IScanner
     {
         public void Print(List<Document> documents)
         {
@@ -17,16 +17,6 @@ namespace ISPDemo.After
                 Console.WriteLine("Printing {0}...", doc.Text);
             }
             Console.WriteLine("All Items printed" + documents.Count());
-        }
-
-        public void Staple(List<Document> documents)
-        {
-            // Staple the items.
-            foreach (var doc in documents)
-            {
-                Console.WriteLine("Stapling {0}...", doc.Text);
-            }
-            Console.WriteLine("Items stapled" + documents.Count());
         }
 
         public void Fax(List<Document> documents)
