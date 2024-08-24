@@ -15,11 +15,12 @@ namespace ISPDemo.Before
 
         public void PhotoCopy(List<Document> documents)
         {
-            throw new NotImplementedException();
+            // violation: empty function
         }
 
         public void Print(List<Document> documents)
         {
+            // violation: partial implementation
             throw new NotImplementedException();
         }
 
@@ -28,9 +29,9 @@ namespace ISPDemo.Before
             throw new NotImplementedException();
         }
 
-        public void Staple(List<Document> documents)
+        public void StartFaxMachine()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Fax machine starting...");
         }
     }
 }

@@ -7,10 +7,6 @@ namespace ISPDemo.Before
 
     class Machine : IMachine
     {
-        public Machine()
-        {
-        }
-
         public void Print(List<Document> documents)
         {
             // Print the items.
@@ -19,16 +15,6 @@ namespace ISPDemo.Before
                 Console.WriteLine("Printing {0}...", doc.Text);
             }
             Console.WriteLine("All Items printed" + documents.Count());
-        }
-
-        public void Staple(List<Document> documents)
-        {
-            // Staple the items.
-            foreach (var doc in documents)
-            {
-                Console.WriteLine("Stapling {0}...", doc.Text);
-            }
-            Console.WriteLine("Items stapled" + documents.Count());
         }
 
         public void Fax(List<Document> documents)
