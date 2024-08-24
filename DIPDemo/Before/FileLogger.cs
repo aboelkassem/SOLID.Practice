@@ -2,11 +2,10 @@
 
 namespace DIPDemo.Before
 {
-    public class FileLogger : ILogger
+    public class FileLogger
     {
         public void LogEvent(string message, string category)
         {
-            string fileName = string.Format(@"c:\test\Log_{0:yyyy-MM-dd}.txt", DateTime.Today);
 
             var logLines = new StringBuilder();
             logLines.AppendLine("===========");
@@ -15,7 +14,7 @@ namespace DIPDemo.Before
             logLines.AppendLine(DateTime.Now.ToString());
             logLines.AppendLine(message);
 
-            File.AppendAllText(fileName, logLines.ToString());
+            Console.WriteLine(logLines.ToString());
 
             Console.WriteLine("File logger");
         }
