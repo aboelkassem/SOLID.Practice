@@ -34,7 +34,7 @@ namespace SRPDemo.Before
         /// Format text about Employee that can be appended to a report
         /// </summary>
         /// <returns></returns>
-        public String ReportHours()
+        public string ReportHours()
         {
             var sb = new StringBuilder();
             sb.Append(this.FirstName);
