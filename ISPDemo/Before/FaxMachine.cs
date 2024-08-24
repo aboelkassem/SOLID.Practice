@@ -30,10 +30,5 @@ namespace ISPDemo.Before
         {
             throw new NotImplementedException();
         }
-
-        public void Staple(List<Document> documents)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

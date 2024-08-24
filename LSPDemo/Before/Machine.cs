@@ -2,7 +2,7 @@
 
 namespace ISPDemo.Before
 {
-    // The code that violates ISP
+    // The code that violates LSP
     // Code implementing the IMachine interface. 
 
     class Machine : IMachine

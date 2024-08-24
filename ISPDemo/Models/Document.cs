@@ -7,6 +7,5 @@
             Text = text;
         }
         public string Text { get; set; }
-
     }
 }
